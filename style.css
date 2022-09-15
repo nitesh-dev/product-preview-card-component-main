@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.product-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 20px;
+}
+
+.product-card-content {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    box-shadow: 0 4px 20px 10px rgb(0 0 0 / 5%);
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 100%);
+    line-height: 1.6;
+}
+
+.product-card-content>img {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-card-detail {
+    padding: 25px;
+}
+
+.product-card-detail h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0px;
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces";
+}
+
+
+.product-card-detail p {
+    margin: 10px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+.product-price {
+    margin: 20px 0px;
+}
+
+
+.product-current-price {
+    font-size: 24px;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    vertical-align: middle;
+    font-family: 'Fraunces';
+}
+
+.product-prev-price {
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    margin: 0px 20px;
+    text-decoration: line-through;
+    vertical-align: middle;
+}
+
+
+
+.product-buy {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-buy:hover {
+    background-color: hsl(158, 39%, 29%);
+}
+
+.product-buy span {
+    font-size: 15px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.product-buy img {
+    width: 16px;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+    .product-card-content {
+        grid-template-columns: 300px;
+    }
+
+    .product-card-content>img {
+        height: 200px;
+        border-radius: 0;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+    }
+
+    .product-card-detail {
+        padding: 20px;
+        padding-top: 10px;
+    }
+}
+
+
+
+
+
+/* ------ attribution ------ */
+.attribution {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
